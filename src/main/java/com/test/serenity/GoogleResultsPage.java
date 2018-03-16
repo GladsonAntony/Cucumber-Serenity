@@ -25,7 +25,7 @@ public class GoogleResultsPage extends PageObject {
   }
 
   public List<String> getResultsList() {
-    List<String> resultList = new ArrayList<>();
+    List<String> resultList = new ArrayList();
     for (WebElement element : linkTitlesList) {
       resultList.add(element.getText());
     }
